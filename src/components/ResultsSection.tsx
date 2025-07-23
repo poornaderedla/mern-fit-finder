@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -19,11 +18,11 @@ import {
   Award
 } from 'lucide-react';
 
-interface AssessmentResultsProps {
+interface ResultsSectionProps {
   assessmentData: any;
 }
 
-const AssessmentResults = ({ assessmentData }: AssessmentResultsProps) => {
+const ResultsSection = ({ assessmentData }: ResultsSectionProps) => {
   const { psychometric, technical, wiscar } = assessmentData;
 
   // Calculate overall recommendation
@@ -407,4 +406,4 @@ const AssessmentResults = ({ assessmentData }: AssessmentResultsProps) => {
   );
 };
 
-export default AssessmentResults;
+export default ResultsSection; 
